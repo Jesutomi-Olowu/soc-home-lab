@@ -1,0 +1,3 @@
+sudo apt install elasticsearch kibana logstash filebeat \
+clamav clamav-daemon chkrootkit rkhunter \
+wireshark suricata zeek nmap tcpdump net-tools -y
