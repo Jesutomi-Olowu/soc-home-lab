@@ -1,13 +1,71 @@
-*.tar
-*.tar.*
-*.jar
-*.exe
-*.msi
-*.zip
-*.tgz
+# System files
+*.swp
+*.bak
+*.tmp
 *.log
-*.log.*
-*.sig
+*.out
 
-pkg/
-src/
+# Logs and dumps
+*.pcap
+*.pcapng
+*.dump
+*.log.*
+*.gz
+*.zip
+*.tar
+*.tar.gz
+
+# OS and user config
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.~lock.*
+*.un~
+
+# Compiled binaries
+*.pyc
+*.pyo
+__pycache__/
+*.class
+*.o
+*.so
+*.exe
+*.dll
+
+# Elastic/Logstash/Kibana junk
+elasticsearch/data/
+logstash/data/
+logstash/logs/
+kibana/data/
+kibana/logs/
+
+# Wazuh
+/var/ossec/logs/
+/var/ossec/queue/
+/var/ossec/tmp/
+
+# Malware samples (don't upload them)
+malware_samples/
+*.vir
+*.infected
+
+# IDE/Editor configs
+.vscode/
+.idea/
+*.code-workspace
+
+# Systemd/service unit logs
+*.journal
+*.service
+
+# Shell history and private data
+.bash_history
+.zsh_history
+.env
+*.key
+*.pem
+*.crt
+*.asc
+secrets.txt
+creds.txt
