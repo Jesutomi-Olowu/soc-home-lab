@@ -1,0 +1,3 @@
+sudo apt install cmake make gcc g++ flex bison libpcap-dev libssl-dev python3-dev swig zlib1g-dev -y
+git clone --recursive https://github.com/zeek/zeek
+cd zeek && ./configure && make && sudo make install
